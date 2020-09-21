@@ -18,7 +18,7 @@ driveBase:
 transmissions:
 - motors:
   - id: 0
-    name: BAG (0)
+    name: BAG Left
     model: BAG
     kt: 0.0
     kv: 0.0
@@ -37,7 +37,7 @@ transmissions:
   efficiency: 1.0
 - motors:
   - id: 1
-    name: BAG (1)
+    name: BAG Right
     model: BAG
     kt: 0.0
     kv: 0.0

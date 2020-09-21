@@ -11,18 +11,18 @@ import com.nerdherd.lib.drivetrain.teleop.ArcadeDrive;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
-import frc.OI;
+import frc.SimOI;
 import frc.robot.subsystems.Drive;
 
 public class Robot extends TimedRobot {
 
     public Drive drive;
-    public OI oi;
+    public SimOI oi;
 
     @Override
     public void robotInit() {
         drive = new Drive();
-        oi = new OI();
+        oi = new SimOI();
         drive.setDefaultCommand(new ArcadeDrive(drive, oi));
     }
 

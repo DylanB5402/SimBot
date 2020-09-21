@@ -13,9 +13,12 @@ import com.nerdherd.lib.oi.GameOI;
 /**
  * Add your docs here.
  */
-public class OI extends DefaultOI {
+public class SimOI extends DefaultOI {
 
-    public OI() {
+    /**
+     * OI made for using WASD to control the robot in FRC Sim
+     */
+    public SimOI() {
         super();
     }
 

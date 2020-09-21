@@ -16,11 +16,15 @@ public class Drive extends Drivetrain {
    * Creates a new Drive.
    */
   public Drive() {
-    super(new NerdyTalon(0), new NerdyTalon(1), new CANMotorController[]{}, new CANMotorController[]{}, true, true, 0.5);
+    super(new NerdyTalon(0), new NerdyTalon(1), new CANMotorController[]{}, new CANMotorController[]{}, false, true, 0.5);
+    super.m_leftMaster = (NerdyTalon) super.m_leftMaster;
+    super.configSensorPhase(false, false);
+    
   }
 
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
+    super.reportToSmartDashboard();
   }
 }
